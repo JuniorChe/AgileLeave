@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Submit Leave Request</h2>
+<form method="POST">
+    <input type="date" name="start_date" required>
+    <input type="date" name="end_date" required>
+    <select name="leave_type">
+        <option>Vacation</option>
+        <option>Sick</option>
+        <option>Personal</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
