@@ -1,0 +1,10 @@
+            - name: Jira Deployment Action
+  # You may pin to the exact commit or the version.
+  # uses: dgocoder/jira-notify@e73f6eae885a2b1310f21efd237fb681721795ac
+  uses: dgocoder/jira-notify@v2
+  with:
+    # Environment of change
+    environment: 
+    # Deployment state for jira
+    state: # optional, default is successful
+          
