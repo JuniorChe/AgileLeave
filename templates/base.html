@@ -2,15 +2,24 @@
 <html>
 <head>
     <title>AgileLeave</title>
-    <link rel="stylesheets" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <h1>AgileLeave</h1>
     <nav>
         <a href="/request">Submit Request</a> |
-        <a href="/manager">manager Review</a>
+        <a href="/manager">Manager Review</a>
     </nav>
     <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class="flash-messages">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
     {% block content %}{% endblock %}
 </body>
 </html>

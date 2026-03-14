@@ -1,2 +1,22 @@
-body { font-family: Arial; margin: 20px; }
-nav a { margin-right: 10px; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+.flash-messages {
+    list-style: none;
+    padding-left: 0;
+}
+
+.flash-messages li {
+    background: #edf7ed;
+    border: 1px solid #b7dfb8;
+    border-radius: 4px;
+    color: #14532d;
+    margin: 8px 0;
+    padding: 8px 10px;
+}
